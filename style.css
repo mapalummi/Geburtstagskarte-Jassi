@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;700&display=swap");
+
+body {
+  font-family: "Comic Neue", cursive;
+  text-align: center;
+  background-color: #fce4ec;
+  color: #d81b60;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 120px;
+}
+
+button {
+  background-color: #d81b60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 110px;
+}
+
+button:hover {
+  background-color: #c2185b;
+}
+
+#confettiCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  display: none; /* Verstecke das Konfetti-Canvas zu Beginn */
+}
+
+#name {
+  font-size: 5em;
+  font-weight: bold;
+  display: none;
+
+  margin-bottom: 60px;
+}
+
+@media (max-width: 430px) {
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 380px) {
+  h1 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 22px;
+  }
+}
